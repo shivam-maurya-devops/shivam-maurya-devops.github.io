@@ -4,305 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam - Web Devloper portfolios</title>
+    <title>Shivam - DevOps Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(232, 237, 179);
-            color: rgb(0, 0, 0);
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 50px;
-            background-color: rgb(247, 226, 174);
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 023px;
-            display: flex;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: rgb(239, 8, 8);
-        }
-
-        nav ul li a:hover {
-            color: lavender;
-            font-size: 1.04rem;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 90px;
-        }
-
-        .firstSection>div {
-            width: 40%;
-        }
-
-        .leftSection {
-            font-size: 3rem;
-            margin: 70px 0;
-        }
-        .leftSection .btn{
-            padding: 12px;
-            background: rgb(189, 83, 234);
-            color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
-
-        }
-
-        .rightSection img {
-            width: 100%;
-            margin: 0px 0;
-            /* background-color: red; */
-        }
-
-        .orange {
-            color: rgb(170, 76, 232);
-        }
-
-        #element {
-            color: rgb(112, 79, 231);
-        }
-
-        .secondSection {
-            max-width: 80vw;
-            height: 500px;
-            margin: auto;
-        }
-
-        .secondSection h1 {
-            font-size: 1.8rem;
-            height: 10vh;
-        }
-
-        main hr {
-            border: 0;
-            background: black;
-            height: 1.5px;
-            margin: 40px 90px;
-        }
-
-        .text-gray {
-            color: gray;
-        }
-
-        .secondSection .box {
-            background: white;
-            width: 75vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-
-        .secondSection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 130px;
-            ;
-
-        }
-
-        .vertical-title {
-            position: relative;
-            top: 75px;
-            width: 150px;
-        }
-
-        .vertical-desc {
-            color: grey;
-            position: relative;
-            top: 85px;
-            width: 150px;
-            font-size: 9px;
-        }
-
-        .image-top {
-            width: 23px;
-            position: relative;
-            top: -32px;
-            left: -9px;
-
-        }
-
-        footer {
-            background-color: grey;
-            /* height: 233px; */
-
-        }
-
-        .footer {
-            display: flex;
-            padding: 23px 23px;
-            justify-content: space-evenly;
-        }
-
-        .footer ul {
-            list-style: none;
-        }
-
-        .footer>div {
-            width: 223px;
-        }
-
-        footer .footer-rights {
-            text-align: center;
-            padding: 12px;
-        }
-    </style>
-
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left">Shivam's portfolio</div>
-            <div class="right">
+            <div class="logo">Shivam's Portfolio</div>
+            <div class="nav-links">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Us</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="firstSection">
+        <section id="home" class="firstSection">
             <div class="leftSection">
-                Hi, My name is <span class="orange">Shivam</span>
-                <div>and I am a passionate</div>
-                <!-- <div>Web Developer</div> -->
-                <span id="element"></span> <br>
-                <div>
-                <button class="btn">Download Resume</button>
-                <button class="btn">Visit Github</button>
+                <h1>Hi, I'm <span class="highlight">Shivam</span></h1>
+                <p>A passionate <span id="element"></span></p>
+                <div class="cta-buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
             </div>
-            </div>
-
             <div class="rightSection">
-                <img src="bg.png" alt="">
+                <img src="bg.png" alt="Developer Illustration">
             </div>
         </section>
+
         <hr>
-        <section class="secondSection">
-            <span class="text-gray">What I have done so far</span>
-            <h1>Work Experience</h1>
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="developer.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer (2018-2022)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, consectetur voluptatibus
-                        totam molestias quae modi perferendis officia quaerat, magni nostrum, iste numquam fuga.
-                    </div>
+
+        <section id="about" class="secondSection">
+            <h2>About Me</h2>
+            <p>I am a skilled DevOps Engineer with expertise in cloud platforms, CI/CD pipelines, and automation. My passion lies in building scalable, reliable infrastructure and bridging the gap between development and operations.</p>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>CI/CD Pipelines</h3>
+                    <p>Building robust CI/CD pipelines for seamless deployment and integration.</p>
                 </div>
-                <div class="vertical">
-                    <img class="image-top" src="developer.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer (2018-2022)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, consectetur voluptatibus
-                        totam molestias quae modi perferendis officia quaerat, magni nostrum, iste numquam fuga.
-                    </div>
+                <div class="card">
+                    <h3>Cloud Management</h3>
+                    <p>Expertise in AWS, Azure, and Kubernetes for scalable infrastructure.</p>
                 </div>
-                <div class="vertical">
-                    <img class="image-top" src="developer.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer (2018-2022)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, consectetur voluptatibus
-                        totam molestias quae modi perferendis officia quaerat, magni nostrum, iste numquam fuga.
-                    </div>
+                <div class="card">
+                    <h3>Monitoring & Logging</h3>
+                    <p>Setting up Prometheus, Grafana, and Loki for efficient monitoring and alerting.</p>
                 </div>
-                <div class="vertical">
-                    <img class="image-top" src="developer.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer (2018-2022)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, consectetur voluptatibus
-                        totam molestias quae modi perferendis officia quaerat, magni nostrum, iste numquam fuga.
-                    </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Microservices Architecture</h3>
+                    <p>Implemented a microservices architecture for an e-commerce application.</p>
+                </div>
+                <div class="project">
+                    <h3>CI/CD Pipeline Automation</h3>
+                    <p>Automated deployment pipelines for a banking application using Azure DevOps.</p>
+                </div>
+                <div class="project">
+                    <h3>Cloud Migration</h3>
+                    <p>Led cloud migration for an on-premise application to AWS.</p>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer">
-            <div class="footer-first"></div>
-            <h3>Shivam's Developer portfolio</h3>
-            <div class="footer-second">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
                 <ul>
-                    <li>Home</li>
-                    <li>about</li>
-                    <li>Contact</li>
-                    <li>Services</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
                 </ul>
             </div>
-            <div class="footer-third">
+            <div class="footer-column">
+                <h3>Contact</h3>
                 <ul>
-                    <li>Home</li>
-                    <li>about</li>
-                    <li>Contact</li>
-                    <li>Services</li>
-                </ul>
-            </div>
-            <div class="footer-forth">
-                <ul>
-                    <li>Home</li>
-                    <li>about</li>
-                    <li>Contact</li>
-                    <li>Services</li>
+                    <li>Email: shivam@example.com</li>
+                    <li>Phone: +1234567890</li>
+                    <li>LinkedIn: <a href="#">LinkedIn Profile</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-rights">
-            Copyrights &#169; www.syswebdevloper.tech | All right reserved
+            © 2024 Shivam's Portfolio | All Rights Reserved
         </div>
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web developer', 'Graphics Designer', 'Web Designer', 'Devops Engineer'],
-            // Strings: ['Web Developer', 'Graphics Designer', 'Web Designer', 'Video Editor'],
+            strings: ['DevOps Engineer', 'Cloud Architect', 'Automation Expert'],
             typeSpeed: 50,
+            loop: true,
         });
     </script>
 </body>
