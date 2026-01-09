@@ -152,6 +152,17 @@ nav a:hover {
     gap: 20px;
 }
 
+.cert-link * {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cert-link {
+    all: unset;          /* removes ALL default anchor styling */
+    display: block;      /* makes the full div clickable */
+    cursor: pointer;
+}
+
 .cert-card {
     background: white;
     padding: 20px 15px;
